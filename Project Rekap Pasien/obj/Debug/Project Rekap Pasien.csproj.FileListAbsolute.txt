@@ -1,0 +1,171 @@
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Project Rekap Pasien.exe.config
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Project Rekap Pasien.exe
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Project Rekap Pasien.pdb
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.Properties.Resources.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csproj.GenerateResource.Cache
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csproj.CoreCompileInputs.cache
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.exe
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.pdb
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.AppForm.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.LoginForm.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.SearchCustomControl.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.RegisNewCustomControl.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.RegisOldCustomControl.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Pasien.db
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Dapper.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\System.Data.SQLite.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Dapper.xml
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\System.Data.SQLite.xml
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\System.Data.SQLite.dll.config
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.IdentitasOrangTua.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.IdentitasPasien.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.SettingAccountCustomControl.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.DataPasien.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\EntityFramework.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\EntityFramework.SqlServer.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\System.Data.SQLite.EF6.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\System.Data.SQLite.Linq.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\EntityFramework.xml
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\EntityFramework.SqlServer.xml
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\EnvDTE.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\stdole.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\Microsoft.MSXML.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.PrintPreview.resources
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\@Project\Project Rekap Pasien\Project Rekap Pasien\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Rekapitulasi.db
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Project Rekap Pasien.exe.config
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Project Rekap Pasien.exe
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Project Rekap Pasien.pdb
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Dapper.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\EntityFramework.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\EntityFramework.SqlServer.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\System.Data.SQLite.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\System.Data.SQLite.EF6.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\System.Data.SQLite.Linq.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\EnvDTE.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\stdole.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Microsoft.MSXML.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\Dapper.xml
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\EntityFramework.xml
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\EntityFramework.SqlServer.xml
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\System.Data.SQLite.xml
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\System.Data.SQLite.dll.config
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.AppForm.resources
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.LoginForm.resources
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.Properties.Resources.resources
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.RekapitulasiUserControl.resources
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csproj.GenerateResource.Cache
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csproj.CoreCompileInputs.cache
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.exe
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.pdb
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.IndikatorUserControl.resources
+D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.GJBUserControl.resources
