@@ -169,3 +169,91 @@ D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project R
 D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.pdb
 D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.IndikatorUserControl.resources
 D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.GJBUserControl.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Rekapitulasi.db
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\SqlServerTypes\x64\msvcr120.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\SqlServerTypes\x64\SqlServerSpatial140.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\SqlServerTypes\x86\msvcr120.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Dapper.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\EntityFramework.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\EntityFramework.SqlServer.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.Common.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.DataVisualization.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.Design.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.ProcessingObjectModel.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.ReportViewer.WinForms.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.SqlServer.Types.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\System.Data.SQLite.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\System.Data.SQLite.EF6.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\System.Data.SQLite.Linq.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\EnvDTE.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.Shell.Interop.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.Shell.Interop.8.0.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\stdole.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.OLE.Interop.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.VisualStudio.TextManager.Interop.8.0.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Microsoft.MSXML.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Dapper.xml
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\EntityFramework.xml
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\EntityFramework.SqlServer.xml
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\System.Data.SQLite.xml
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\System.Data.SQLite.dll.config
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.Common.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.DataVisualization.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.Design.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\de\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\es\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\fr\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\it\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ja\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ko\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\pt\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\ru\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Interop.MDACVer.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csproj.ResolveComReference.cache
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.AppForm.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.GJBUserControl.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.IndikatorUserControl.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.LoginForm.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.Properties.Resources.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.RekapitulasiUserControl.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csproj.GenerateResource.Cache
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csproj.CoreCompileInputs.cache
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project_Rekap_Pasien.SettingUC.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\User Guide.docx
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\User Guide.pdf
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Aplikasi Rekapitulasi Pasien.exe.config
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Aplikasi Rekapitulasi Pasien.exe
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Aplikasi Rekapitulasi Pasien.pdb
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Aplikasi Rekapitulasi Pasien.exe
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Aplikasi Rekapitulasi Pasien.pdb

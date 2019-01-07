@@ -8,7 +8,11 @@ namespace Project_Rekap_Pasien
 {
     public class UserModel
     {
-        public string username { get; set; }
-        public string password { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public string Nama { get; set; }
+        public string Jabatan { get; set; }
+        public string Instalasi { get; set; }
+        public int Role { get; set; }
     }
 }

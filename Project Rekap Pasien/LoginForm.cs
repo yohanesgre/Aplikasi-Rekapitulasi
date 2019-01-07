@@ -26,18 +26,17 @@ namespace Project_Rekap_Pasien
         {
             if (SqliteDataAccess.CheckLogin(tbUsername.Text, tbPassword.Text))
             {
+                tbUsername.Text = "";
+                tbPassword.Text = "";
                 this.Hide();
                 var appForm = new AppForm();
                 appForm.Closed += (s, args) => this.Show();
                 appForm.Show();
-                tbUsername.Text = "";
-                tbPassword.Text = "";
             }
             else
             {
                 MessageBox.Show("Username/Password salah!", "Error", MessageBoxButtons.OK);
             }
-            //Console.WriteLine(EncryptPassword.Encrypt("admin", "zxc123"));
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

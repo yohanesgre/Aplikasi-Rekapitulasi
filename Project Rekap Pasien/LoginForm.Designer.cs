@@ -43,6 +43,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox2)).BeginInit();
@@ -217,12 +218,24 @@
             this.label6.TabIndex = 13;
             this.label6.Text = "RUMAH SAKIT UNIVERSITAS MUHAMMADIYAH MALANG";
             // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(-3, 543);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 3, 2);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(204, 16);
+            this.label7.TabIndex = 15;
+            this.label7.Text = "Copyright ©2018 by Sepay Team";
+            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ControlLight;
             this.ClientSize = new System.Drawing.Size(784, 561);
+            this.Controls.Add(this.label7);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.Panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
@@ -237,6 +250,7 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -256,6 +270,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         internal System.Windows.Forms.Label label2;
         internal System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
     }
 }
 

@@ -7,7 +7,7 @@
     <ProjectGuid>{5FA0324D-B76C-4F5F-BE9C-911EB35104FE}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Project_Rekap_Pasien</RootNamespace>
-    <AssemblyName>Project Rekap Pasien</AssemblyName>
+    <AssemblyName>Aplikasi Rekapitulasi Pasien</AssemblyName>
     <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -62,6 +62,16 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.900.148\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
     </Reference>
@@ -114,18 +124,20 @@
     <Compile Include="AppForm.Designer.cs">
       <DependentUpon>AppForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EncryptPassword.cs" />
-    <Compile Include="FileReaderWriter.cs" />
-    <Compile Include="GJBUserControl.cs">
+    <Compile Include="Utils\EncryptPassword.cs" />
+    <Compile Include="Utils\Exporter.cs" />
+    <Compile Include="Utils\FileReaderWriter.cs" />
+    <Compile Include="Utils\Formula.cs" />
+    <Compile Include="UserControl\GJBUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="GJBUserControl.Designer.cs">
+    <Compile Include="UserControl\GJBUserControl.Designer.cs">
       <DependentUpon>GJBUserControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="IndikatorUserControl.cs">
+    <Compile Include="UserControl\IndikatorUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="IndikatorUserControl.Designer.cs">
+    <Compile Include="UserControl\IndikatorUserControl.Designer.cs">
       <DependentUpon>IndikatorUserControl.cs</DependentUpon>
     </Compile>
     <Compile Include="Model\Indikator.cs" />
@@ -139,21 +151,27 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SqliteDataAccess.cs" />
-    <Compile Include="SqlServerTypes\Loader.cs" />
-    <Compile Include="RekapitulasiUserControl.cs">
+    <Compile Include="UserControl\SettingUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="RekapitulasiUserControl.Designer.cs">
+    <Compile Include="UserControl\SettingUC.Designer.cs">
+      <DependentUpon>SettingUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Utils\SqliteDataAccess.cs" />
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="UserControl\RekapitulasiUserControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl\RekapitulasiUserControl.Designer.cs">
       <DependentUpon>RekapitulasiUserControl.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AppForm.resx">
       <DependentUpon>AppForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GJBUserControl.resx">
+    <EmbeddedResource Include="UserControl\GJBUserControl.resx">
       <DependentUpon>GJBUserControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="IndikatorUserControl.resx">
+    <EmbeddedResource Include="UserControl\IndikatorUserControl.resx">
       <DependentUpon>IndikatorUserControl.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="LoginForm.resx">
@@ -169,8 +187,11 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="RekapitulasiUserControl.resx">
+    <EmbeddedResource Include="UserControl\RekapitulasiUserControl.resx">
       <DependentUpon>RekapitulasiUserControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl\SettingUC.resx">
+      <DependentUpon>SettingUC.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -182,6 +203,12 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="User Guide.docx">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="User Guide.pdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
@@ -201,6 +228,20 @@
     <None Include="Resources\indikator.png" />
     <None Include="Resources\gjb.png" />
     <None Include="Resources\setting.png" />
+    <Content Include="Resources\adduser_32.png" />
+    <None Include="Resources\update_32.png" />
+    <None Include="Resources\excel_32.png" />
+    <None Include="Resources\add_date_32.png" />
+    <None Include="Resources\add_date_321.png" />
+    <None Include="Resources\delete_date_32.png" />
+    <None Include="Resources\delete_date_321.png" />
+    <None Include="Resources\delete_room_32.png" />
+    <None Include="Resources\add_room_32.png" />
+    <None Include="Resources\add_user_32.png" />
+    <None Include="Resources\save_to_image.png" />
+    <None Include="Resources\delete_user_32.png" />
+    <None Include="Resources\update_user_32.png" />
+    <None Include="Resources\user.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
@@ -232,6 +273,17 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="MDACVer">
+      <Guid>{54AF9343-1923-11D3-9CA4-00C04F72C514}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>50</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" />
