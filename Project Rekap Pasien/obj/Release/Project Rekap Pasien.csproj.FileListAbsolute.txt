@@ -167,21 +167,16 @@ D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Release\Project
 D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Release\Project Rekap Pasien.csproj.CoreCompileInputs.cache
 D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Release\Project Rekap Pasien.exe
 D:\@Project\Project Rekap Pasien - Copy\Project Rekap Pasien\obj\Release\Project Rekap Pasien.pdb
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Interop.MDACVer.dll
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project Rekap Pasien.csproj.ResolveComReference.cache
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.AppForm.resources
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.GJBUserControl.resources
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.IndikatorUserControl.resources
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.LoginForm.resources
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.Properties.Resources.resources
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.RekapitulasiUserControl.resources
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project Rekap Pasien.csproj.GenerateResource.Cache
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project Rekap Pasien.csproj.CoreCompileInputs.cache
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Rekapitulasi.db
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\SqlServerTypes\x64\msvcr120.dll
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\SqlServerTypes\x64\SqlServerSpatial140.dll
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\SqlServerTypes\x86\msvcr120.dll
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\SqlServerTypes\x86\SqlServerSpatial140.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\User Guide.docx
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\User Guide.pdf
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Aplikasi Rekapitulasi Pasien.exe.config
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Aplikasi Rekapitulasi Pasien.exe
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Aplikasi Rekapitulasi Pasien.pdb
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Dapper.dll
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\EntityFramework.dll
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\EntityFramework.SqlServer.dll
@@ -247,11 +242,16 @@ D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\pt\Microsoft.
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\ru\Microsoft.ReportViewer.WinForms.resources.dll
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\zh-CHS\Microsoft.ReportViewer.WinForms.resources.dll
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\zh-CHT\Microsoft.ReportViewer.WinForms.resources.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Interop.MDACVer.dll
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project Rekap Pasien.csproj.ResolveComReference.cache
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.AppForm.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.GJBUserControl.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.IndikatorUserControl.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.LoginForm.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.Properties.Resources.resources
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.RekapitulasiUserControl.resources
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project_Rekap_Pasien.SettingUC.resources
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\User Guide.docx
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\User Guide.pdf
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Aplikasi Rekapitulasi Pasien.exe.config
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Aplikasi Rekapitulasi Pasien.exe
-D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Release\Aplikasi Rekapitulasi Pasien.pdb
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project Rekap Pasien.csproj.GenerateResource.Cache
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Project Rekap Pasien.csproj.CoreCompileInputs.cache
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Aplikasi Rekapitulasi Pasien.exe
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Release\Aplikasi Rekapitulasi Pasien.pdb

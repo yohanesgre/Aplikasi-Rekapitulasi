@@ -76,7 +76,11 @@ namespace Project_Rekap_Pasien
                     dt.Rows.Add(count, rekap.Data, rekap.Januari, rekap.Februari, rekap.Maret, rekap.April, rekap.Mei, rekap.Juni, rekap.Juli, rekap.Agustus, rekap.September, rekap.Oktober, rekap.November, rekap.Desember, rekap.Total);
                 }
             }
+            AppForm.listIndikator = SqliteDataAccess.getAllIndikatorDataOfRuanganTahun(namaRuangan, tahunSelected);
             dataGridView1.DataSource = dt;
+            lblTitleTable.Text = "Tabel Rekapitulasi Ruang " + namaRuangan + " Tahun " + tahunSelected + "";
+            panel6.Visible = true;
+            panel7.Visible = true;
             dataGridView1.Visible = true;
         }
 
@@ -99,18 +103,24 @@ namespace Project_Rekap_Pasien
                 updateRekap.Oktober = (int)row.Cells[11].Value;
                 updateRekap.November = (int)row.Cells[12].Value;
                 updateRekap.Desember = (int)row.Cells[13].Value;
-                updateRekap.Total = (int)row.Cells[14].Value;
+                for (int j = 2; j < 14; j++)
+                    updateRekap.Total += (int)row.Cells[j].Value;
                 updateRekap.updatedAt = DateTime.Now.ToString("HH:mm | dd-MM-yyyy");
-                SqliteDataAccess.updateData((int)row.Cells[0].Value, tahunSelected, updateRekap);
+                SqliteDataAccess.updateData((int)row.Cells[0].Value, tahunSelected, updateRekap, namaRuangan);
             }
             AppForm.listRekapitulasi = SqliteDataAccess.getAllRekapitulasiDataOfRuanganTahun(namaRuangan, tahunSelected);
             lblUpdate.Text = "Diperbarui: " + AppForm.listRekapitulasi[0].updatedAt;
+            if (SqliteDataAccess.getAllIndikatorDataOfRuanganTahun(namaRuangan, tahunSelected).Count == 0)
+            {
+                addNewIndikator(tahunSelected, namaRuangan);
+            }
             indikatorUC.CalculateIndikator(tahunSelected, namaRuangan);
             foreach (Indikator indikator in AppForm.listIndikator)
             {
-                SqliteDataAccess.updateIndikator(indikator.Id, tahunSelected, indikator);
+                SqliteDataAccess.updateIndikator(indikator.Id, tahunSelected, indikator, namaRuangan);
             }
             MessageBox.Show("Perbaruan data berahasil!", "Berhasil", MessageBoxButtons.OK);
+            initDataRekapitulasiByTahun();
         }
 
 
@@ -264,7 +274,10 @@ namespace Project_Rekap_Pasien
                 if (!alreadyExists)
                     listViewTahun.Items.Add(rekap.Tahun.ToString());
             }
+            panel6.Visible = false;
+            panel7.Visible = false;
             dataGridView1.Visible = false;
+            panel4.Visible = true;
             listViewTahun.Visible = true;
             listViewTahun.Refresh();
         }
@@ -287,6 +300,7 @@ namespace Project_Rekap_Pasien
             AppForm.listRekapitulasi = SqliteDataAccess.getAllRekapitulasiDataOfRuanganTahun(namaRuangan, tahunSelected);
             AppForm.listIndikator = SqliteDataAccess.getAllIndikatorDataOfRuanganTahun(namaRuangan, tahunSelected);
             listViewTahun.Visible = false;
+            panel4.Visible = false;
             initDataRekapitulasiByTahun();
         }
 
@@ -300,6 +314,11 @@ namespace Project_Rekap_Pasien
             for (int i = 0; i < dataGridView1.RowCount - 1; i++)
             {
                 DataGridViewRow row = dataGridView1.Rows[i];
+                if (i == 6)
+                {
+                    row.Cells[14].Value = row.Cells[3].Value;
+                    return;
+                }
                 int total = 0;
                 for (int j = 2; j <= 13; j++)
                 {
@@ -317,11 +336,12 @@ namespace Project_Rekap_Pasien
             {
                 btnParseData.Visible = false;
                 btnAddNewData.Visible = true;
-                btnTambahRuangan.Visible = true;
+      //          btnTambahRuangan.Visible = true;
                 btnReload.Visible = false;
                 lblUpdate.Visible = false;
-                btnHapusTahun.Visible = false;
-                btnHapusRuangan.Visible = true;
+                btnEditTahun.Visible = false;
+                //        btnHapusTahun.Visible = false;
+                //      btnHapusRuangan.Visible = true;
                 btnExportExcel.Visible = false;
             }
             else
@@ -333,10 +353,11 @@ namespace Project_Rekap_Pasien
                 lblUpdate.Visible = true;
                 btnParseData.Visible = true;
                 btnAddNewData.Visible = false;
-                btnTambahRuangan.Visible = false;
+//                btnTambahRuangan.Visible = false;
                 btnReload.Visible = true;
-                btnHapusTahun.Visible = true;
-                btnHapusRuangan.Visible = true;
+                btnEditTahun.Visible = true;
+                //              btnHapusTahun.Visible = true;
+                //            btnHapusRuangan.Visible = true;
                 btnExportExcel.Visible = true;
             }
         }
@@ -350,7 +371,7 @@ namespace Project_Rekap_Pasien
                 {
                     addNewData(mTahun, namaRuangan);
                     addTahunInListView();
-                    refreshRuangan();
+                    //refreshRuangan();
                     indikatorUC.RefreshRuangan();
                     indikatorUC.RefreshTahunInListView();
                 }
@@ -375,6 +396,35 @@ namespace Project_Rekap_Pasien
             MessageBox.Show("Data Table dikembalikan ke pembaruan terakhir!", "Pemberitahuan", MessageBoxButtons.OK);
         }
 
+        private void btnExportExcel_Click(object sender, EventArgs e)
+        {
+            Exporter.ExportToExcel(tahunSelected, namaRuangan);
+        }
+
+        private void btnEditTahun_Click(object sender, EventArgs e)
+        {
+            int newTahun = RekapAddDataDialog.editTahun("Edit Tahun");
+            foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+            {
+                SqliteDataAccess.UpdateTahunRekapitulasi(rekap.Id, tahunSelected, newTahun, namaRuangan);
+            }
+            foreach (Indikator indikator in AppForm.listIndikator)
+            {
+                SqliteDataAccess.UpdateTahunIndikator(indikator.Id, tahunSelected, newTahun, namaRuangan);
+            }
+            tahunSelected = newTahun;
+            initDataRekapitulasiByTahun();
+            MessageBox.Show("Tahun berhasil diubah!", "Pemberitahuan", MessageBoxButtons.OK);
+        }
+
+        private void RekapitulasiUserControl_Load(object sender, EventArgs e)
+        {
+            lblNamaUser.Text = LoginForm.userModel.Nama;
+            lblUsername.Text = LoginForm.userModel.Username;
+            //refreshRuangan();
+        }
+
+        /*
         private void btnTambahRuangan_Click(object sender, EventArgs e)
         {
             string ruangan = RekapAddDataDialog.newRuangan("Tambah Ruangan");
@@ -385,34 +435,30 @@ namespace Project_Rekap_Pasien
                 MessageBox.Show("Nama ruangan tidak boleh kosong!", "Error", MessageBoxButtons.OK);
             }
         }
+        */
 
-        private void RekapitulasiUserControl_Load(object sender, EventArgs e)
-        {
-            lblNamaUser.Text = LoginForm.userModel.Nama;
-            lblUsername.Text = LoginForm.userModel.Username;
-            refreshRuangan();
-        }
-
-        private void btnHapusRuangan_Click(object sender, EventArgs e)
-        {
-            var confirmResult = MessageBox.Show("Apakah Anda yakin untuk menghapus ruangan " + namaRuangan + "?", "Konfirmasi Menghapus Ruangan", MessageBoxButtons.YesNo);
-            if (confirmResult == DialogResult.Yes)
-            {
-                SqliteDataAccess.deleteRuanganInRekap(namaRuangan);
-                SqliteDataAccess.deleteRuanganInIndikator(namaRuangan);
-                refreshRuangan();
-                if (dataGridView1.Visible)
+        /*
+                private void btnHapusRuangan_Click(object sender, EventArgs e)
                 {
-                    dataGridView1.Visible = false;
-                    listViewTahun.Visible = true;
+                    var confirmResult = MessageBox.Show("Apakah Anda yakin untuk menghapus ruangan " + namaRuangan + "?", "Konfirmasi Menghapus Ruangan", MessageBoxButtons.YesNo);
+                    if (confirmResult == DialogResult.Yes)
+                    {
+                        SqliteDataAccess.deleteRuanganInRekap(namaRuangan);
+                        SqliteDataAccess.deleteRuanganInIndikator(namaRuangan);
+                        refreshRuangan();
+                        if (dataGridView1.Visible)
+                        {
+                            dataGridView1.Visible = false;
+                            listViewTahun.Visible = true;
+                        }
+                        if (listViewTahun.Items.Count > 0)
+                        {
+                            listViewTahun.Items.Clear();
+                        }
+                    }
                 }
-                if (listViewTahun.Items.Count > 0)
-                {
-                    listViewTahun.Items.Clear();
-                }
-            }
-        }
-
+                */
+        /*
         private void btnHapusTahun_Click(object sender, EventArgs e)
         {
             var confirmResult = MessageBox.Show("Apakah Anda yakin untuk menghapus data tahun " + tahunSelected + " di raungan "+namaRuangan+"?", 
@@ -433,11 +479,7 @@ namespace Project_Rekap_Pasien
                 }
             }
         }
-
-        private void btnExportExcel_Click(object sender, EventArgs e)
-        {
-            Exporter.ExportToExcel(tahunSelected, namaRuangan);
-        }
+*/
 
         ////private void dataGridView1_UserAddedRow(object sender, DataGridViewRowEventArgs e)
         ////{
@@ -489,35 +531,35 @@ namespace Project_Rekap_Pasien
             return tahun;
         }
 
-            public static string newRuangan (string caption)
+        public static int editTahun(string caption)
+        {
+            Form prompt = new Form();
+            prompt.Width = 320;
+            prompt.Height = 170;
+            prompt.Text = caption;
+            prompt.StartPosition = FormStartPosition.CenterParent;
+            Label textLabel = new Label() { Left = 50, Top = 20, Text = "Ubah Tahun: ", AutoSize = true, Font = new Font("Microsoft San Serif", 15, FontStyle.Bold) };
+            TextBox inputBox = new TextBox() { Left = 50, Top = 50, Width = 200, };
+            Button confirmation = new Button() { Text = "Ok", Left = 140, Width = 50, Top = 80 };
+            int tahun = 0;
+            confirmation.Click += (sender, e) =>
             {
-                Form prompt = new Form();
-                prompt.Width = 320;
-                prompt.Height = 170;
-                prompt.Text = caption;
-                prompt.StartPosition = FormStartPosition.CenterParent;
-                Label textLabel = new Label() { Left = 50, Top = 20, Text = "Nama Ruangan: ", AutoSize = true, Font = new Font("Microsoft San Serif", 15, FontStyle.Bold) };
-                TextBox inputBox = new TextBox() { Left = 50, Top = 50, Width = 200, };
-                Button confirmation = new Button() { Text = "Ok", Left = 140, Width = 50, Top = 80 };
-                string ruangan = null;
-                confirmation.Click += (sender, e) =>
-                {
-                    ruangan = inputBox.Text.ToString();
-                    prompt.Close();
-                };
-                Button cancelBox = new Button() { Text = "Cancel", Left = 200, Width = 50, Top = 80 };
-                cancelBox.Click += (sender, e) =>
-                {
-                    ruangan = "";
-                    prompt.Close();
-                };
-                prompt.Controls.Add(confirmation);
-                prompt.Controls.Add(textLabel);
-                prompt.Controls.Add(inputBox);
-                prompt.Controls.Add(cancelBox);
-                prompt.ShowDialog();
-                return ruangan;
-            }
+                tahun = Int32.Parse(inputBox.Text);
+                prompt.Close();
+            };
+            Button cancelBox = new Button() { Text = "Cancel", Left = 200, Width = 50, Top = 80 };
+            cancelBox.Click += (sender, e) =>
+            {
+                tahun = 0;
+                prompt.Close();
+            };
+            prompt.Controls.Add(confirmation);
+            prompt.Controls.Add(textLabel);
+            prompt.Controls.Add(inputBox);
+            prompt.Controls.Add(cancelBox);
+            prompt.ShowDialog();
+            return tahun;
+        }
     }
 
         class TahunComparer : IEqualityComparer<Rekapitulasi>

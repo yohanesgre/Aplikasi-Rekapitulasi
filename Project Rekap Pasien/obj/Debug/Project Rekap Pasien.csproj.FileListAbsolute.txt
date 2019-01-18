@@ -257,3 +257,4 @@ D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Aplikasi Rekapi
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\bin\Debug\Aplikasi Rekapitulasi Pasien.pdb
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Aplikasi Rekapitulasi Pasien.exe
 D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Aplikasi Rekapitulasi Pasien.pdb
+D:\@Project\Aplikasi-Rekapitulasi\Project Rekap Pasien\obj\Debug\Project Rekap Pasien.csprojResolveAssemblyReference.cache

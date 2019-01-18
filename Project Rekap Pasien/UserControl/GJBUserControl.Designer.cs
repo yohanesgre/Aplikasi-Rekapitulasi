@@ -28,11 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.tbBTO = new System.Windows.Forms.TextBox();
@@ -55,7 +56,6 @@
             this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
             this.lblNamaUser = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
@@ -106,11 +106,22 @@
             this.panel4.Size = new System.Drawing.Size(809, 528);
             this.panel4.TabIndex = 5;
             // 
+            // button1
+            // 
+            this.button1.Image = global::Project_Rekap_Pasien.Properties.Resources.save_to_image;
+            this.button1.Location = new System.Drawing.Point(745, 55);
+            this.button1.Margin = new System.Windows.Forms.Padding(5);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(54, 40);
+            this.button1.TabIndex = 3;
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(553, 69);
+            this.label10.Location = new System.Drawing.Point(391, 67);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(28, 13);
             this.label10.TabIndex = 19;
@@ -120,7 +131,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(553, 42);
+            this.label9.Location = new System.Drawing.Point(391, 40);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(30, 13);
             this.label9.TabIndex = 18;
@@ -129,26 +140,26 @@
             // tbBTO
             // 
             this.tbBTO.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbBTO.Location = new System.Drawing.Point(395, 64);
+            this.tbBTO.Location = new System.Drawing.Point(318, 64);
             this.tbBTO.Name = "tbBTO";
             this.tbBTO.ReadOnly = true;
-            this.tbBTO.Size = new System.Drawing.Size(152, 22);
+            this.tbBTO.Size = new System.Drawing.Size(67, 22);
             this.tbBTO.TabIndex = 17;
             // 
             // tbTOI
             // 
             this.tbTOI.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbTOI.Location = new System.Drawing.Point(395, 37);
+            this.tbTOI.Location = new System.Drawing.Point(318, 37);
             this.tbTOI.Name = "tbTOI";
             this.tbTOI.ReadOnly = true;
-            this.tbTOI.Size = new System.Drawing.Size(152, 22);
+            this.tbTOI.Size = new System.Drawing.Size(67, 22);
             this.tbTOI.TabIndex = 16;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(306, 69);
+            this.label8.Location = new System.Drawing.Point(221, 69);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(30, 13);
             this.label8.TabIndex = 15;
@@ -158,7 +169,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(306, 40);
+            this.label7.Location = new System.Drawing.Point(221, 40);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(16, 13);
             this.label7.TabIndex = 14;
@@ -170,7 +181,7 @@
             this.tbALOS.Location = new System.Drawing.Point(148, 64);
             this.tbALOS.Name = "tbALOS";
             this.tbALOS.ReadOnly = true;
-            this.tbALOS.Size = new System.Drawing.Size(152, 22);
+            this.tbALOS.Size = new System.Drawing.Size(67, 22);
             this.tbALOS.TabIndex = 13;
             // 
             // tbBOR
@@ -179,14 +190,14 @@
             this.tbBOR.Location = new System.Drawing.Point(148, 37);
             this.tbBOR.Name = "tbBOR";
             this.tbBOR.ReadOnly = true;
-            this.tbBOR.Size = new System.Drawing.Size(152, 22);
+            this.tbBOR.Size = new System.Drawing.Size(67, 22);
             this.tbBOR.TabIndex = 12;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(361, 69);
+            this.label6.Location = new System.Drawing.Point(284, 69);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(32, 13);
             this.label6.TabIndex = 11;
@@ -196,7 +207,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(361, 40);
+            this.label5.Location = new System.Drawing.Point(284, 40);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(28, 13);
             this.label5.TabIndex = 10;
@@ -243,7 +254,8 @@
             "Triwulan III",
             "Triwulan IV",
             "Semester I",
-            "Semester II"});
+            "Semester II",
+            "Setahun"});
             this.cbPeriode.Location = new System.Drawing.Point(257, 5);
             this.cbPeriode.Name = "cbPeriode";
             this.cbPeriode.Size = new System.Drawing.Size(104, 21);
@@ -301,19 +313,19 @@
             // 
             // chart1
             // 
-            chartArea1.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea1);
+            chartArea2.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea2);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Fill;
-            legend1.Name = "Legend1";
-            this.chart1.Legends.Add(legend1);
+            legend2.Name = "Legend1";
+            this.chart1.Legends.Add(legend2);
             this.chart1.Location = new System.Drawing.Point(30, 21);
             this.chart1.Name = "chart1";
-            series1.ChartArea = "ChartArea1";
-            series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-            series1.IsValueShownAsLabel = true;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chart1.Series.Add(series1);
+            series2.ChartArea = "ChartArea1";
+            series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+            series2.IsValueShownAsLabel = true;
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart1.Series.Add(series2);
             this.chart1.Size = new System.Drawing.Size(729, 358);
             this.chart1.TabIndex = 2;
             this.chart1.Text = "chart1";
@@ -354,17 +366,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1043, 55);
             this.panel1.TabIndex = 5;
-            // 
-            // button1
-            // 
-            this.button1.Image = global::Project_Rekap_Pasien.Properties.Resources.save_to_image;
-            this.button1.Location = new System.Drawing.Point(745, 55);
-            this.button1.Margin = new System.Windows.Forms.Padding(5);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(54, 40);
-            this.button1.TabIndex = 3;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // panel2
             // 

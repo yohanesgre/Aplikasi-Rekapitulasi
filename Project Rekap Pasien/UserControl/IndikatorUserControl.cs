@@ -25,68 +25,59 @@ namespace Project_Rekap_Pasien
 
         public void CalculateIndikator(int tahun, string ruangan)
         {
-            int count = 0;
-            string data = null;
-            float[] value = new float[12];
-            for (int i = 0; i < 6; i++)
+            AppForm.listIndikator = new List<Indikator>();
+            for (int i = 0; i<6; i++)
             {
+                string data = null;
+                float[] value = new float[13];
                 switch (i)
                 {
                     case 0:
                         data = "BOR";
-                        for (int j = 0; j < 12; j++)
+                        for (int j = 0; j < 13; j++)
                         {
                             value[j] = Formula.calculateBOR(showData("Hari Perawatan", j), showData("Jumlah Tempat Tidur", j), showData("Jumlah Periode", j));
                         }
                         break;
                     case 1:
                         data = "ALOS";
-                        for (int j = 0; j < 12; j++)
+                        for (int j = 0; j < 13; j++)
                         {
                             value[j] = Formula.calculateALOS(showData("Hari Perawatan", j), showData("Pasien Keluar (H&M)", j));
                         }
                         break;
                     case 2:
                         data = "TOI";
-                        for (int j = 0; j < 12; j++)
+                        for (int j = 0; j < 13; j++)
                         {
                             value[j] = Formula.calculateTOI(showData("Jumlah Tempat Tidur", j), showData("Jumlah Periode", j), showData("Hari Perawatan", j), showData("Pasien Keluar (H&M)", j));
                         }
                         break;
                     case 3:
                         data = "BTO";
-                        for (int j = 0; j < 12; j++)
+                        for (int j = 0; j < 13; j++)
                         {
                             value[j] = Formula.calculateBTO(showData("Pasien Keluar (H&M)", j), showData("Jumlah Tempat Tidur", j));
                         }
                         break;
                     case 4:
                         data = "NDR";
-                        for (int j = 0; j < 12; j++)
+                        for (int j = 0; j < 13; j++)
                         {
                             value[j] = Formula.calculateNDR(showData("Pasien Mati >= 48 jam", j), showData("Pasien Keluar (H&M)", j));
                         }
                         break;
                     case 5:
                         data = "GDR";
-                        for (int j = 0; j < 12; j++)
+                        for (int j = 0; j < 13; j++)
                         {
                             value[j] = Formula.calculateGDR(showData("Pasien Mati Keseluruhan", j), showData("Pasien Keluar (H&M)", j));
                         }
                         break;
-                    default:
-                        break;
                 }
-                count++;
-                float rerata = 0;
-                for (int j = 0; j < 12; j++)
-                {
-                    rerata += value[j];
-                }
-                rerata /= 12;
                 Indikator indikator = new Indikator
                 {
-                    Id = count,
+                    Id = i + 1,
                     Ruangan = ruangan,
                     Tahun = tahun,
                     Data = data,
@@ -102,7 +93,7 @@ namespace Project_Rekap_Pasien
                     Oktober = value[9],
                     November = value[10],
                     Desember = value[11],
-                    Total = rerata
+                    Total = value[12]
                 };
                 AppForm.listIndikator.Add(indikator);
             }
@@ -144,6 +135,9 @@ namespace Project_Rekap_Pasien
                     listViewTahun.Items.Add(rekap.Tahun.ToString());
             }
             dataGridView1.Visible = false;
+            panel7.Visible = false;
+            panel8.Visible = false;
+            panel4.Visible = true;
             listViewTahun.Visible = true;
             listViewTahun.Refresh();
         }
@@ -191,6 +185,9 @@ namespace Project_Rekap_Pasien
                 case 11:
                     value = rekap.Desember;
                     break;
+                case 12:
+                    value = rekap.Total;
+                    break;
                 default:
                     break;
             }
@@ -218,6 +215,9 @@ namespace Project_Rekap_Pasien
             foreach (Indikator ind in AppForm.listIndikator)
                 dt.Rows.Add(ind.Id, ind.Data, ind.Januari, ind.Februari, ind.Maret, ind.April, ind.Mei, ind.Juni, ind.Juli, ind.Agustus, ind.September, ind.Oktober, ind.November, ind.Desember, ind.Total);
             dataGridView1.DataSource = dt;
+            lblTitleTable.Text = "Tabel Indikator Ruang " + namaRuangan + " Tahun " + tahunSelected + "";
+            panel7.Visible = true;
+            panel8.Visible = true;
             dataGridView1.Visible = true;
         }
 
@@ -226,6 +226,7 @@ namespace Project_Rekap_Pasien
             tahunSelected = Int32.Parse(e.Item.Text);
             AppForm.listIndikator = SqliteDataAccess.getAllIndikatorDataOfRuanganTahun(namaRuangan, tahunSelected);
             listViewTahun.Visible = false;
+            panel4.Visible = false;
             initDataIndikator();
         }
 

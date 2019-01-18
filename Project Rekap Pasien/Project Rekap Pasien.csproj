@@ -242,6 +242,7 @@
     <None Include="Resources\delete_user_32.png" />
     <None Include="Resources\update_user_32.png" />
     <None Include="Resources\user.png" />
+    <None Include="Resources\edit_tahun.png" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

@@ -58,37 +58,43 @@ namespace Project_Rekap_Pasien
             }
         }
 
-        //public static void insertNewData(string tableName, Rekapitulasi dataRekap)
-        //{
-        //    using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
-        //    {
-        //        cnn.Execute("INSERT INTO " + tableName + " (Ruangan, Data, Tahun, Januari, Februari, Maret, April, Mei, Juni, Juli" +
-        //            ", Agustus, September, Oktober, November, Desember, Total) VALUES (@Ruangan, @Data, @Tahun, @Januari, @Februari," +
-        //            " @Maret, @April, @Mei, @Juni, @Juli, @Agustus, @September, @Oktober, @November, @Desember, @Total)", dataRekap);
-        //    }
-        //}
-
         //-------------------------------------------- Update ----------------------------------------------------------
         
-        public static void updateData(int id, int tahun, Rekapitulasi rekapitulasi)
+        public static void updateData(int id, int tahun, Rekapitulasi rekapitulasi, string ruangan)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 cnn.Execute("UPDATE Rekapitulasi SET Data = @Data, Januari = @Januari, Februari = @Februari," +
                     "Maret = @Maret, April = @April, Mei = @Mei, Juni = @Juni, Juli = @Juli," +
                     "Agustus = @Agustus, September = @September, Oktober = @Oktober, November = @November," +
-                    "Desember = @Desember, Total = @Total, updatedAt = @updatedAt  WHERE Id = " + id + " AND Tahun = " + tahun + "", rekapitulasi);
+                    "Desember = @Desember, Total = @Total, updatedAt = @updatedAt  WHERE Ruangan = '" + ruangan + "' AND Id = " + id + " AND Tahun = " + tahun + "", rekapitulasi);
             }
         }
 
-        public static void updateIndikator(int id, int tahun, Indikator indikator)
+        public static void updateIndikator(int id, int tahun, Indikator indikator, string ruangan)
         {
             using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
             {
                 cnn.Execute("UPDATE Indikator SET Data = @Data, Januari = @Januari, Februari = @Februari," +
                     "Maret = @Maret, April = @April, Mei = @Mei, Juni = @Juni, Juli = @Juli," +
                     "Agustus = @Agustus, September = @September, Oktober = @Oktober, November = @November," +
-                    "Desember = @Desember, Total = @Total  WHERE Id = " + id + " AND Tahun = " + tahun + "", indikator);
+                    "Desember = @Desember, Total = @Total  WHERE Ruangan = '"+ruangan+"' AND Id = " + id + " AND Tahun = " + tahun + "", indikator);
+            }
+        }
+
+        public static void UpdateTahunRekapitulasi(int id, int tahun, int newTahun, string ruangan)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("UPDATE Rekapitulasi SET Tahun = " + newTahun + " WHERE Ruangan = '" + ruangan + "' AND Id = " + id + " AND Tahun = " + tahun + " ");
+            }
+        }
+
+        public static void UpdateTahunIndikator(int id, int tahun, int newTahun, string ruangan)
+        {
+            using (IDbConnection cnn = new SQLiteConnection(LoadConnectionString()))
+            {
+                cnn.Execute("UPDATE Indikator SET Tahun = " + newTahun + " WHERE Ruangan = '" + ruangan + "' AND Id = " + id + " AND Tahun = " + tahun + " ");
             }
         }
 

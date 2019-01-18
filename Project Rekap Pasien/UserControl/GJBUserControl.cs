@@ -40,6 +40,19 @@ namespace Project_Rekap_Pasien
             return periode / BTO;
         }
 
+        float round(float a)
+        {
+            float result = 0;
+            result = (float)Math.Round((double)a, 2);
+            return result;
+        }
+
+        public static string DoFormat(float myNumber)
+        {
+            var s = string.Format("{0:0.00}", myNumber);
+            return s;
+        }
+
         void chartLoad()
         {
             var chart = chart1.ChartAreas[0];
@@ -180,7 +193,7 @@ namespace Project_Rekap_Pasien
             cbTahun.Refresh();
         }
 
-        void changeTextInTextBox(double BOR, double TOI, double ALOS, double BTO)
+        void changeTextInTextBox(float BOR, float TOI, float ALOS, float BTO)
         {
             tbBOR.Text = BOR.ToString();
             tbTOI.Text = TOI.ToString();
@@ -242,96 +255,184 @@ namespace Project_Rekap_Pasien
             switch (index)
             {
                 case 0:
+                    ALOS = round(indikatorALOS.Januari);
+                    BOR = round(indikatorBOR.Januari);
+                    BTO = round(indikatorBTO.Januari);
+                    TOI = round(indikatorTOI.Januari);
                     if (indikatorALOS.Januari == 0 || indikatorBOR.Januari == 0 || indikatorBTO.Januari == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Januari, indikatorTOI.Januari, indikatorALOS.Januari, indikatorBTO.Januari);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO);
                     initChart();
-                    createChart("Januari", indikatorALOS.Januari, indikatorBOR.Januari, indikatorBTO.Januari, 31);
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Januari;
+                    }
+                    createChart("Januari", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 1:
+                    ALOS = round(indikatorALOS.Februari);
+                    BOR = round(indikatorBOR.Februari);
+                    BTO = round(indikatorBTO.Februari);
+                    TOI = round(indikatorTOI.Februari);
                     if (indikatorALOS.Februari == 0 || indikatorBOR.Februari == 0 || indikatorBTO.Februari == 0)
                         break;
-                    int periode;
-                    if (tahunSelected % 4 != 0)
-                        periode = 27;
-                    else
-                        if ((tahunSelected % 100 == 0) && (tahunSelected % 400 != 0))
-                        periode = 27;
-                    else
-                        periode = 28;
-                    changeTextInTextBox(indikatorBOR.Februari, indikatorTOI.Februari, indikatorALOS.Februari, indikatorBTO.Februari);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO);
                     initChart();
-                    createChart("Februari", indikatorALOS.Februari, indikatorBOR.Februari, indikatorBTO.Februari, periode);
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Februari;
+                    }
+                    createChart("Februari", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 2:
+                    ALOS = round(indikatorALOS.Maret);
+                    BOR = round(indikatorBOR.Maret);
+                    BTO = round(indikatorBTO.Maret);
+                    TOI = round(indikatorTOI.Maret);
                     if (indikatorALOS.Maret == 0 || indikatorBOR.Maret == 0 || indikatorBTO.Maret == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Maret, indikatorTOI.Maret, indikatorALOS.Maret, indikatorBTO.Maret);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO);
                     initChart();
-                    createChart("Maret", indikatorALOS.Maret, indikatorBOR.Maret, indikatorBTO.Maret, 31);
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Maret;
+                    }
+                    createChart("Maret", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 3:
+                    ALOS = round(indikatorALOS.April);
+                    BOR = round(indikatorBOR.April);
+                    BTO = round(indikatorBTO.April);
+                    TOI = round(indikatorTOI.April);
                     if (indikatorALOS.April == 0 || indikatorBOR.April == 0 || indikatorBTO.April == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.April, indikatorTOI.April, indikatorALOS.April, indikatorBTO.April);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO);
                     initChart();
-                    createChart("April", indikatorALOS.April, indikatorBOR.April, indikatorBTO.April, 30);
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.April;
+                    }
+                    createChart("April", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 4:
+                    ALOS = round(indikatorALOS.Mei);
+                    BOR = round(indikatorBOR.Mei);
+                    BTO = round(indikatorBTO.Mei);
+                    TOI = round(indikatorTOI.Mei);
                     if (indikatorALOS.Mei == 0 || indikatorBOR.Mei == 0 || indikatorBTO.Mei == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Mei, indikatorTOI.Mei, indikatorALOS.Mei, indikatorBTO.Mei);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO);
                     initChart();
-                    createChart("Mei", indikatorALOS.Mei, indikatorBOR.Mei, indikatorBTO.Mei, 31);
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Mei;
+                    }
+                    createChart("Mei", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 5:
+                    ALOS = round(indikatorALOS.Juni);
+                    BOR = round(indikatorBOR.Juni);
+                    BTO = round(indikatorBTO.Juni);
+                    TOI = round(indikatorTOI.Juni);
                     if (indikatorALOS.Juni == 0 || indikatorBOR.Juni == 0 || indikatorBTO.Juni == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Juni, indikatorTOI.Juni, indikatorALOS.Juni, indikatorBTO.Juni);
-                    initChart();
-                    createChart("Juni", indikatorALOS.Juni, indikatorBOR.Juni, indikatorBTO.Juni, 30);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO); initChart();
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Juni;
+                    }
+                    createChart("Juni", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 6:
+                    ALOS = round(indikatorALOS.Juli);
+                    BOR = round(indikatorBOR.Juli);
+                    BTO = round(indikatorBTO.Juli);
+                    TOI = round(indikatorTOI.Juli);
                     if (indikatorALOS.Juli == 0 || indikatorBOR.Juli == 0 || indikatorBTO.Juli == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Juli, indikatorTOI.Juli, indikatorALOS.Juli, indikatorBTO.Juli);
-                    initChart();
-                    createChart("Juli", indikatorALOS.Juli, indikatorBOR.Juli, indikatorBTO.Juli, 31);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO); initChart();
+                    createChart("Juli", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 7:
+                    ALOS = round(indikatorALOS.Agustus);
+                    BOR = round(indikatorBOR.Agustus);
+                    BTO = round(indikatorBTO.Agustus);
+                    TOI = round(indikatorTOI.Agustus);
                     if (indikatorALOS.Agustus == 0 || indikatorBOR.Agustus == 0 || indikatorBTO.Agustus == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Agustus, indikatorTOI.Agustus, indikatorALOS.Agustus, indikatorBTO.Agustus);
-                    initChart();
-                    createChart("Agustus", indikatorALOS.Agustus, indikatorBOR.Agustus, indikatorBTO.Agustus, 31);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO); initChart();
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Agustus;
+                    }
+                    createChart("Agustus", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 8:
+                    ALOS = round(indikatorALOS.September);
+                    BOR = round(indikatorBOR.September);
+                    BTO = round(indikatorBTO.September);
+                    TOI = round(indikatorTOI.September);
                     if (indikatorALOS.September == 0 || indikatorBOR.September == 0 || indikatorBTO.September == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.September, indikatorTOI.September, indikatorALOS.September, indikatorBTO.September);
-                    initChart();
-                    createChart("September", indikatorALOS.September, indikatorBOR.September, indikatorBTO.September, 30);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO); initChart();
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.September;
+                    }
+                    createChart("September", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 9:
+                    ALOS = round(indikatorALOS.Oktober);
+                    BOR = round(indikatorBOR.Oktober);
+                    BTO = round(indikatorBTO.Oktober);
+                    TOI = round(indikatorTOI.Oktober);
                     if (indikatorALOS.Oktober == 0 || indikatorBOR.Oktober == 0 || indikatorBTO.Oktober == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Oktober, indikatorTOI.Oktober, indikatorALOS.Oktober, indikatorBTO.Oktober);
-                    initChart();
-                    createChart("Oktober", indikatorALOS.Oktober, indikatorBOR.Oktober, indikatorBTO.Oktober, 31);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO); initChart();
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Oktober;
+                    }
+                    createChart("Oktober", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 10:
+                    ALOS = round(indikatorALOS.November);
+                    BOR = round(indikatorBOR.November);
+                    BTO = round(indikatorBTO.November);
+                    TOI = round(indikatorTOI.November);
                     if (indikatorALOS.November == 0 || indikatorBOR.November == 0 || indikatorBTO.November == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.November, indikatorTOI.November, indikatorALOS.November, indikatorBTO.November);
-                    initChart();
-                    createChart("November", indikatorALOS.November, indikatorBOR.November, indikatorBTO.November, 30);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO); initChart();
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.November;
+                    }
+                    createChart("November", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 11:
+                    ALOS = round(indikatorALOS.Desember);
+                    BOR = round(indikatorBOR.Desember);
+                    BTO = round(indikatorBTO.Desember);
+                    TOI = round(indikatorTOI.Desember);
                     if (indikatorALOS.Desember == 0 || indikatorBOR.Desember == 0 || indikatorBTO.Desember == 0)
                         break;
-                    changeTextInTextBox(indikatorBOR.Desember, indikatorTOI.Desember, indikatorALOS.Desember, indikatorBTO.Desember);
-                    initChart();
-                    createChart("Desember", indikatorALOS.Desember, indikatorBOR.Desember, indikatorBTO.Desember, 31);
+                    changeTextInTextBox(BOR, TOI, ALOS, BTO); initChart();
+                    foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
+                    {
+                        if (rekap.Data == "Jumlah Periode")
+                            jumlahPeriode = rekap.Desember;
+                    }
+                    createChart("Desember", ALOS, BOR, BTO, jumlahPeriode);
                     break;
                 case 12:
                     foreach (Rekapitulasi rekap in AppForm.listRekapitulasi)
